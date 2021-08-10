@@ -115,7 +115,6 @@ public class fr_TienTe extends Fragment implements frDialog_ThemThongTinVanChuye
 
 
 
-
     @Override
     public void setInputUpdate(ThongTinVanChuyen thongTinVanChuyen) {
         fireBaseManage.writeThongTinVanChuyen(thongTinVanChuyen);

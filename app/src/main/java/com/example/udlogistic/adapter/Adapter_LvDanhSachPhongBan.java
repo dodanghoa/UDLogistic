@@ -111,7 +111,7 @@ public class Adapter_LvDanhSachPhongBan  extends ArrayAdapter implements Filtera
         if (phongBan == null) {
             return null;
         }
-
+        txtSTT.setText((position+1)+"");
         txtHoTen.setText((phongBan.getTenPhong()));
         //Sự kiện
         btnSua.setOnClickListener(new View.OnClickListener() {
@@ -137,7 +137,6 @@ public class Adapter_LvDanhSachPhongBan  extends ArrayAdapter implements Filtera
         FragmentActivity activity = (FragmentActivity)(context);
         FragmentManager fm = activity.getSupportFragmentManager();
         android.app.FragmentManager fm2 = activity.getFragmentManager();
-
         switch (item.getItemId()) {
             case R.id.menuItem_Edit:
                 frDialog_ThemPhongBan frDialog_themPhongBan = new frDialog_ThemPhongBan(phongBans.get(position));
